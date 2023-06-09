@@ -8,17 +8,17 @@ delete=0
 while True:
     mapp=tkinter.Tk()
     def createfile():
-        filename=input("filename: ")
-        file=open(file=f"C:\\systemos\\{filename}",mode="w")
+        filenamer=input("filename: ")
+        file=open(file=f"C:\\systemos\\{filenamer}",mode="w")
         file.close()
     def deletefile():
-        filename=input("filename: ")
+        filenamera=input("filename: ")
         sure=input("are you sure to delete the file?: ")
         if sure=="no":
             return 0
         delete=0
         if sure=="yes":
-            os.remove(filename)
+            os.remove(filenamera)
         delete=1
         files=os.scandir(r"C:\systemos\home")
     os.chdir(r"C:\systemos\home")
