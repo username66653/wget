@@ -9,7 +9,7 @@ while True:
     mapp=tkinter.Tk()
     def createfile():
         filename=input("filename: ")
-        file=open(file=f"C:\\Users\\maksf\\Downloads\\fabric-example-mod-1.19\\home\\{filename}",mode="w")
+        file=open(file=f"C:\\systemos\\{filename}",mode="w")
         file.close()
     def deletefile():
         filename=input("filename: ")
@@ -20,9 +20,9 @@ while True:
         if sure=="yes":
             os.remove(filename)
         delete=1
-        files=os.scandir(r"C:\Users\maksf\Downloads\fabric-example-mod-1.19\home")
-    os.chdir(r"C:\Users\maksf\Downloads\fabric-example-mod-1.19\home")
-    files=os.scandir(r"C:\Users\maksf\Downloads\fabric-example-mod-1.19\home")
+        files=os.scandir(r"C:\systemos\home")
+    os.chdir(r"C:\systemos\home")
+    files=os.scandir(r"C:\systemos\home")
     for file in files:
         def runfile():
             filename=file.name
