@@ -3,7 +3,7 @@ import os
 import shutil
 import tkinter
 import warnings
-warnings.warn("this is the 6 bug fix ):<")
+warnings.warn("started")
 delete=0
 while True:
     mapp=tkinter.Tk()
