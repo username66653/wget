@@ -25,7 +25,7 @@ while True:
     files=os.scandir(r"C:\systemos\home")
     for file in files:
         def runfile():
-            filename=file.name
+            filenamerar=file.name
             subprocess.Popen(file.name,shell=True)
         b=tkinter.Button(text=f"{file.name} {file.path}",command=runfile)
         if delete==1:
@@ -37,6 +37,4 @@ while True:
     tkinter.Button(text="delete file",command=deletefile).pack()
     tkinter.Button(text="turn off OS",command=turnoff).pack()
     tkinter.Label(text="close window to refresh").pack()
-    print(f"added {tkinter.Button}")
-    print(deletefile())
     mapp.mainloop()
