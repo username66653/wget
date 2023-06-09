@@ -3,13 +3,13 @@ import os
 import shutil
 import tkinter
 import warnings
-warnings.warn("started")
+warnings.warn("this is the 6 bug fix ):<")
 delete=0
 while True:
     mapp=tkinter.Tk()
     def createfile():
         filenamer=input("filename: ")
-        file=open(file=f"C:\\systemos\\{filenamer}",mode="w")
+        file=open(file=f"C:\\systemos\\home\\{filenamer}",mode="w")
         file.close()
     def deletefile():
         filenamera=input("filename: ")
